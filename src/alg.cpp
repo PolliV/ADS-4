@@ -21,8 +21,11 @@ int countPairs2(int *arr, int len, int value) {
       start++;
       last--;
     } else {
-      if (sum < value) start++;
-      else last--;
+      if (sum < value) {
+        start++;
+      } else {
+        last--;
+      }
     }
   }
   return k;
